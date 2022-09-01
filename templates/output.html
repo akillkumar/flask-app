@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="static/css/output.css" />
+    <title>output</title>
+</head>
+
+<body>
+
+<section class="colour-bg">
+    <div class="untitled">
+        <div class="untitled__slides">
+            <div class="untitled__slide">
+                <div class="untitled__slideBg"></div>
+
+            </div>
+            <div class="untitled__slide">
+                <div class="untitled__slideBg"></div>
+
+            </div>
+            <div class="untitled__slide">
+                <div class="untitled__slideBg"></div>
+
+            </div>
+            <div class="untitled__slide">
+                <div class="untitled__slideBg"></div>
+
+            </div>
+        </div>
+        <div class="untitled__shutters"></div>
+    </div>
+</section>
+
+
+<div class="wrapper">
+    <div class="profile-card js-profile-card">
+        <div class="profile-card__img">
+            <img src="static/imgs/user_img.png"
+                alt="profile card" srcset="">
+        </div>
+
+        <div class="profile-card__cnt js-profile-cnt">
+            <div class="profile-card__name">{{data['Name']}}</div>
+            <div class="profile-card__txt">Email: <strong>{{data['MailId']}}</</strong></div>
+            <div class="profile-card__txt">Phone Number: <strong>{{data['Number']}}</strong></div>
+            <div class="profile-card__txt">Date of Birth: <strong>{{data['DOB']}}</strong></div>
+            <div class="profile-card__txt">Carries: <strong>{{data['Carrier']}}</strong></div>
+            <div class="profile-card__txt">Address: <strong>{{data['Address']}}</strong></div>
+            
+
+        </div>
+
+        
+    </div>
+
+</div>
+
+    <!-- <div class="info">Information</div>
+    <div class="box">
+        <img src="https://tse3.explicit.bing.net/th?id=OIP.4d7Emr_d4fJnEE6zK7pj_wHaFK&pid=Api&P=0" alt="profile pic"
+            srcset="" />
+        {% for item in data %} 
+        <p class="ligh-text">Phone Number <span>{{item.phoneNumber}}</span></p>
+        <p class="ligh-text">Name <span>{{item.name}}</span></p>
+        <p class="ligh-text">Email <span>{{item.email}}</span></p>
+        <p class="ligh-text">Address <span>{{item.address}}</span></p>
+        <p class="ligh-text">Date of brith <span>{{item.dob}}</span></p>
+        <p class="ligh-text">carries <span>{{item.carries}}</span></p>
+        {% endfor %}
+    </div> -->
+</body>
+
+</html>

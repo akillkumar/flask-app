@@ -1,0 +1,423 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="shortcut icon" href="static/imgs/fav.png" type="image/x-icon">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"> -->
+  <link rel="stylesheet" href="static/css/style.css">
+
+  <!-- Bootstrap CSS -->
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+    integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <title>Tracकर</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light header-menu w-100 bg-white fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#home"><img class="logo" src="static/imgs/Frame3_new.png" alt="" style="color: #132C6C;">Tracकर </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+        <ul class="navbar-nav mb-2 mb-lg-0 menu">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#detail">Application Details</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#feature">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="login">Log Out</a>
+          </li>
+
+        </ul>
+        <a class="btn btn-outline-primary btn-lg" href="#about">About us</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="colour-bg">
+    <div class="untitled">
+      <div class="untitled__slides">
+        <div class="untitled__slide">
+          <div class="untitled__slideBg"></div>
+          
+        </div>
+        <div class="untitled__slide">
+          <div class="untitled__slideBg"></div>
+         
+        </div>
+        <div class="untitled__slide">
+          <div class="untitled__slideBg"></div>
+          
+        </div>
+        <div class="untitled__slide">
+          <div class="untitled__slideBg"></div>
+          
+        </div>
+      </div>
+      <div class="untitled__shutters"></div>
+    </div>
+  </section>
+
+<section class="allset" data-aos="fade-up">
+  <section class="banner-area"  id="home" >
+    <div class="container" data-aos="fade-up">
+      <div class="row">
+        <div class="col-lg">
+          <div class="banner-text w-50 mx-auto text-white text-center">
+            <h3> It is Helping Hand </h3>
+            <h1 class="mb-5" style="font-size: 108px;">Tracकर</h1>
+            <form action="{{ url_for('IN')}}" method="post">
+              <div class="row">
+                <div class="col-lg-7" style="gap: 10px;">
+
+                  <!-- <label for="mobilenumber">Number:</label> -->
+                  <input type="text" id="mobilenumber" class="form-control form-control-lg" name="mnumber"
+                    placeholder="mobile number">
+                  <input type="text" id="emailid" class="form-control form-control-lg" name="Email"
+                    placeholder="email id">
+
+
+
+                </div>
+                <div class="col-3">
+                  <button type="submit" class="btn btn-outline-primary btn-lg btn-block"> <a
+                      style="text-decoration:none; color: aliceblue;" href="face">Facial Recognition</a> </button>
+                  <button type="submit" class="btn btn-info btn-lg btn-block" href="result"  >Submit</button>
+                </div>
+              </div>
+            </form>
+
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  </section>
+
+
+
+<!-- detail -->
+
+
+
+  <section id="detail" >
+    <!-- <section class="counter" data-aos="fade-up">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3">
+            <h1>100+</h1>
+            <p>Health programs</p>
+          </div>
+          <div class="col-lg-3">
+            <h1>50+</h1>
+            <p>Individual parameters</p>
+          </div>
+          <div class="col-lg-3">
+            <h1>2500+</h1>
+            <p>Active users</p>
+          </div>
+          <div class="col-lg-3">
+            <h1>10 X</h1>
+            <p>Training efficiency</p>
+          </div>
+
+        </div>
+      </div>
+    </section> -->
+
+    <section class="activity-section" data-aos="fade-up">
+      <div class="container" data-aos="fade-left">
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="activity-section-text">
+              <h1 class="mb-4">About our app</h1>
+              <p>Tool which is able to horizontally crawl and gather data across different platforms. This search could be based upon
+              mail ID or the mobile number.
+              
+              Expectation: Police will be able to crowd source the information from different platforms and instantly develop the
+              profile of the suspected person. eg- based upon different types of classification.
+              
+              Result (expected): Police will get a handy tool which will be able to generate digital profile of any suspect/criminal
+              within minutes.</p>
+            </div>
+          </div>
+          <div class="col-lg-4" data-aos="fade-right">
+            <img class="rounded" src="https://i.ibb.co/kGypbtk/015.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <section id="feature">
+    <section class="app-paragraph text-center" data-aos="fade-up">
+      <div class="container main-bg">
+        <div class="col">
+          <h1>Learn more about our application</h1>
+          
+        </div>
+      </div>
+    </section>
+
+    <section class="features-area py-5"  >
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-4 mb-4" data-aos="fade-right">
+            <div class="features-item  d-flex align-items-center">
+              <div class="left-img h-100">
+                <img src="https://i.ibb.co/pXrQP7z/022.jpg" alt="">
+              </div>
+              <div class="right-text h-auto">
+                <h4>Mobile Tracking</h4>
+                <p>Can create a person's profile from mobile number.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-4" data-aos="fade-up">
+            <div class="features-item d-flex align-items-center">
+              <div class="left-img h-100">
+                <img src="https://i.ibb.co/ZxbR3bH/mbr-7.png" alt="">
+              </div>
+              <div class="right-text h-auto">
+                <h4>Email Tracking</h4>
+                <p>Can generate someone's profile from provided email.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mb-4" data-aos="fade-left">
+            <div class="features-item d-flex align-items-center">
+              <div class=" left-img h-100">
+                <img class="prb " src="https://i.ibb.co/djc1JkF/mbr-8.jpg" alt="">
+              </div>
+              <div class="right-text h-auto">
+                <h4>Face Recognition</h4>
+                <p>Matches provided face in database and displays their profile.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mb-4" data-aos="fade-right">
+            <div class="features-item d-flex align-items-center">
+              <div class="left-img h-100">
+                <img src="https://i.ibb.co/f054zw4/05.jpg" alt="">
+              </div>
+              <div class="right-text h-auto">
+                <h4>Secured Access</h4>
+                <p>Ony available to authorized individuals by uttarakhand police govt.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mb-4 item" data-aos="fade-up">
+            <div class="features-item d-flex align-items-center">
+              <div class="left-img h-100">
+                <img src="https://i.ibb.co/12VThQK/mbr-12.png" alt="">
+              </div>
+              <div class="right-text h-auto">
+                <h4>Intelligence</h4>
+                <p>Is able to crawl and gather information from different sources.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-4" data-aos="fade-left">
+            <div class="features-item d-flex align-items-center">
+              <div class="left-img h-100">
+                <img src="https://i.ibb.co/vQtg6sq/mbr-13.jpg" alt="">
+              </div>
+              <div class="right-text h-auto">
+                <h4>Responsive </h4>
+                <p>Can be accessed from any device with internet service. </p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- <div class="col-lg-4 mb-4 item" data-aos="fade-right">
+            <div class="features-item d-flex align-items-center">
+              <div class="left-img h-100">
+                <img src="https://i.ibb.co/12VThQK/mbr-12.png" alt="">
+              </div>
+              <div class="right-text h-auto">
+                <h4>WORKOUTS</h4>
+                <p>We build the workouts for you, you follow them and get results. App will take you through each
+                  expert-built workout, set by set.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mb-4 item" data-aos="fade-center">
+            <div class="features-item d-flex align-items-center">
+              <div class="left-img h-100">
+                <img src="https://i.ibb.co/12VThQK/mbr-12.png" alt="">
+              </div>
+              <div class="right-text h-auto">
+                <h4>WORKOUTS</h4>
+                <p>We build the workouts for you, you follow them and get results. App will take you through each
+                  expert-built workout, set by set.</p>
+              </div>
+            </div>
+          </div> -->
+
+        </div>
+      </div>
+
+    </section>
+  </section>
+
+
+<section id="feature">
+  <section class="app-paragraph text-center" data-aos="fade-up">
+    <div class="container main-bg">
+      <div class="col">
+        <h1>Get to know our team</h1>
+
+      </div>
+    </div>
+  </section>
+</section>
+
+
+  <!-- About section Start -->
+
+  <section class="about-area py-5 main-bg" id="about">
+    <div class="container main-bg ">
+      <div class="row">
+
+        <div class="col-lg-3" data-aos="fade-left">
+          <div class="about-items">
+            <div class="card border-0 shadow">
+              <img class="rounded-circle" src="static/imgs/WhatsApp Image 2022-02-06 at 2.58.26 PM.jpeg" alt="">
+              <div class="card-body">
+                <h4 class="card-title">Devendra Parihar</h4>
+                <h6 class="card-subtitle mb-3">Backend Developer</h6>
+                <p class="card-text mb-3">Aspiring Data Scientist & Machine Learning Engineer</p>
+                <a class="btn btn-light shadow mb-4" href="https://www.linkedin.com/in/dev-parihar524/">Linkedin</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3" data-aos="fade-right">
+          <div class="about-items">
+            <div class="card border-0 shadow">
+              <img class="rounded-circle" src="static/imgs/IMG_20220725_140745~2.jpg" alt="">
+              <div class="card-body">
+                <h4 class="card-title">Mohit Pareek</h4>
+                <h6 class="card-subtitle mb-3">Web Designer </h6>
+                <p class="card-text mb-3"> M.E.R.N stack developer | Ui/UX Designer</p>
+                <a class="btn btn-light shadow mb-4" href="https://www.linkedin.com/in/mohit-pareek-b8a676204/">Linkedin</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3" data-aos="fade-left">
+          <div class="about-items">
+            <div class="card border-0 shadow">
+              <img class="rounded-circle" src="static/imgs/1635756022897.jpg" alt="">
+              <div class="card-body">
+                <h4 class="card-title">Yuvraj Singh</h4>
+                <h6 class="card-subtitle mb-3">Manager</h6>
+                <p class="card-text mb-3">5 ✨hackerank || Web Developer || UI/UX Designer </p>
+                <a class="btn btn-light shadow mb-4" href="https://www.linkedin.com/in/yuvraj-singh-168826204/">Linkedin</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3" data-aos="fade-right">
+          <div class="about-items">
+            <div class="card border-0 shadow">
+              <img class="rounded-circle" src="static/imgs/1655582769611.jpg" alt="">
+              <div class="card-body">
+                <h4 class="card-title">Milan Kumawat</h4>
+                <h6 class="card-subtitle mb-3">Designer</h6>
+                <p class="card-text mb-3"> Flutter • Dart • Cross Platform📱App Developer • Hybrid App</p>
+                <a class="btn btn-light shadow mb-4" href="https://www.linkedin.com/in/milankumawat01/">Linkedin</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+
+    </div>
+  </section>
+  <!-- About section End -->
+
+ 
+
+
+
+
+
+
+
+<section id="feature">
+  <section class="app-paragraph text-center" data-aos="fade-up">
+    <div class="container main-bg">
+      <div class="col">
+        <h3>© Copyright 2022 Incredible Engineers -All Rights Reserved</h3>
+
+      </div>
+    </div>
+  </section>
+</section>
+
+
+
+
+
+
+
+
+<!-- footer Section -->
+
+<!-- <footer class="footer-section  p-4">
+  <div class="container ">
+    <div class="row ">
+      <div class="col text-center">
+        <p class="lead  mb-0">© Copyright 2020 AH Pollob - All Rights Reserved</p>
+      </div>
+    </div>
+  </div>
+</footer> -->
+
+
+  <!-- Optional JavaScript -->
+  <!-- Popper.js first, then Bootstrap JS -->
+  <link rel="stylesheet" href="js/bootstrap.min.js">
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+    integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+    crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+
+</html>
